@@ -80,7 +80,7 @@ app.listen(PORT, () =>
 
 **`.env.example`** — copy to `.env`, paste your key:
 ```bash
-MOONSHOT_API_KEY=sk-PASTE-YOUR-REAL-KEY-HERE
+MOONSHOT_API_KEY=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
 KIMI_MODEL=kimi-k2-0711-preview
 MOONSHOT_BASE=https://api.moonshot.cn/v1/chat/completions
 PORT=3000

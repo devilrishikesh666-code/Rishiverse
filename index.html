@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NEXORA — a 3D AI universe powered by Kimi. Built solely by Rishikesh Singh.">
+<title>NEXORA — by Rishikesh Singh</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="load-owner">Rishikesh Singh &nbsp;presents</div>
+  <div class="load-orb"></div>
+  <div id="loadPct">0%</div>
+  <div class="load-label" id="loadLabel">loading GLSL shaders…</div>
+</div>
+
+<div id="scrollbar"><div id="scrollbarFill"></div></div>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<canvas id="trail"></canvas>
+<canvas id="webgl"></canvas>
+<div class="grid-bg"></div>
+<div class="noise"></div>
+
+<main>
+<nav id="nav">
+  <a class="logo" href="#hero"><span class="logo-orb"></span>NEXORA <small>by Rishikesh Singh</small></a>
+  <div class="nav-links">
+    <a href="#capabilities">Powers</a><a href="#creator">Creator</a><a href="#demo">Live Demo</a><a href="#stats">Stats</a>
+  </div>
+  <button class="btn btn-primary btn-small" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">Meet VIDYA</button>
+</nav>
+
+<section id="hero">
+  <div class="hero-inner">
+    <div class="eyebrow hero-el"><span class="pulse-dot"></span>POWERED BY KIMI AI — LIVE API</div>
+    <h1 id="heroTitle">Enter <span class="grad">NEXORA</span></h1>
+    <div class="hero-el"><span class="owner-badge">👑 A UNIVERSE ENGINEERED BY THE ONLY OWNER — RISHIKESH SINGH</span></div>
+    <p class="hero-sub hero-el">Meet <b>VIDYA</b> — विद्या, the ancient Sanskrit word for knowledge. A living AI streaming from the Kimi API, inside a breathing 3D cosmos.</p>
+    <div class="hero-cta hero-el">
+      <button class="btn btn-primary" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">Start Chatting ↗</button>
+      <button class="btn btn-ghost" onclick="document.getElementById('capabilities').scrollIntoView({behavior:'smooth'})">Explore Powers</button>
+    </div>
+    <div class="hero-hint hero-el">💡 click the core = shockwave · press <kbd>/</kbd> to chat · Konami code = party</div>
+  </div>
+  <div class="scroll-hint hero-el"><div class="mouse"><div class="wheel"></div></div>scroll</div>
+</section>
+
+<div class="marquee"><div class="marquee-track">
+  <span>ANSWER <b>✦</b> CODE <b>✦</b> CREATE <b>✦</b> KIMI LIVE <b>✦</b> <i>NEXORA</i> <b>✦</b> VIDYA <b>✦</b> <i>RISHIKESH SINGH</i> <b>✦</b>&nbsp;</span>
+  <span>ANSWER <b>✦</b> CODE <b>✦</b> CREATE <b>✦</b> KIMI LIVE <b>✦</b> <i>NEXORA</i> <b>✦</b> VIDYA <b>✦</b> <i>RISHIKESH SINGH</i> <b>✦</b>&nbsp;</span>
+</div></div>
+
+<section id="capabilities">
+  <div class="section-head reveal">
+    <div class="tag">CAPABILITIES</div>
+    <h2>One mind, <span class="grad">three powers</span></h2>
+    <p>VIDYA fuses a live Kimi LLM stream, code rendering and visual synthesis into one neural core.</p>
+  </div>
+  <div class="cards">
+    <div class="card reveal" data-tilt><div class="glowline"></div>
+      <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="1.8"><path d="M21 12a8 8 0 0 1-8 8H4l2-3a8 8 0 1 1 15-5z"/></svg></div>
+      <h3>Live AI Streaming</h3><p>Real Kimi API responses streamed token-by-token — while the plasma core visibly overclocks.</p>
+    </div>
+    <div class="card reveal" data-tilt><div class="glowline"></div>
+      <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.8"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6M13 4l-3 16"/></svg></div>
+      <h3>Code Generation</h3><p>Markdown code blocks are auto-detected, syntax-highlighted and rendered with one-click copy.</p>
+    </div>
+    <div class="card reveal" data-tilt><div class="glowline"></div>
+      <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ff2d75" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.8"/><path d="M21 15l-5-5-9 9"/></svg></div>
+      <h3>Voice & Vision</h3><p>VIDYA speaks with a real voice, hears you through the mic — and paints images seeded by your words.</p>
+    </div>
+  </div>
+</section>
+
+<section id="creator">
+  <div class="section-head reveal">
+    <div class="tag">THE ARCHITECT</div>
+    <h2>Forged by <span class="grad">one vision</span></h2>
+  </div>
+  <div class="creator-card reveal">
+    <div class="crown">👑</div>
+    <div class="monogram">RS</div>
+    <h3>RISHIKESH SINGH</h3>
+    <div class="creator-role">Founder · Engineer · Designer · Sole Owner of NEXORA</div>
+    <p class="creator-quote">"I didn't want to build a website. I wanted to build a universe — something that breathes, reacts, and speaks. NEXORA is that universe, and VIDYA is its voice."</p>
+    <div class="creator-tags"><span>🧠 AI Systems</span><span>🎨 3D Design</span><span>⚡ Full-Stack</span><span>🚀 Sole Owner</span></div>
+  </div>
+</section>
+
+<section id="demo">
+  <div class="section-head reveal">
+    <div class="tag">LIVE DEMO</div>
+    <h2>Talk to <span class="grad">VIDYA</span></h2>
+    <p>Real AI. Real streaming. Real voice. Try the chips, type, or speak.</p>
+  </div>
+  <div class="chat-shell reveal">
+    <div class="chat-header">
+      <div class="chat-id">
+        <div class="mini-orb" id="miniOrb"></div>
+        <div><div class="chat-name">VIDYA · विद्या</div>
+        <div class="chat-status"><span class="eq"><i></i><i></i><i></i><i></i></span> online · streaming</div></div>
+      </div>
+      <div class="chat-right">
+        <span class="speak-eq" id="speakEq"><i></i><i></i><i></i></span>
+        <span class="model-badge" id="apiBadge">connecting…</span>
+        <button id="ttsBtn" title="Toggle voice">🔊</button>
+      </div>
+    </div>
+    <div class="messages" id="messages"></div>
+    <div class="chips">
+      <button class="chip" data-q="Write a Python sorting function">🐍 Python sort</button>
+      <button class="chip" data-q="Generate an image of a neon nebula">🎨 Nebula art</button>
+      <button class="chip" data-q="Who made you?">👑 Who made you?</button>
+      <button class="chip" data-q="847 * 23 + 105">🧮 Do math</button>
+    </div>
+    <form id="chatForm" class="chat-input">
+      <input id="chatInput" placeholder="Ask VIDYA anything… (or press /)" autocomplete="off">
+      <button type="button" class="mic" id="micBtn" title="Voice input">🎙️</button>
+      <button type="submit" class="send">➤</button>
+    </form>
+  </div>
+</section>
+
+<section id="stats">
+  <div class="stats">
+    <div class="stat reveal"><div class="stat-num" data-count="40">0</div><div class="stat-label">Languages</div></div>
+    <div class="stat reveal"><div class="stat-num" data-count="120">0</div><div class="stat-label">ms Latency</div></div>
+    <div class="stat reveal"><div class="stat-num" data-count="10">0</div><div class="stat-label">M+ Generations</div></div>
+    <div class="stat reveal"><div class="stat-num" data-count="1">0</div><div class="stat-label">Owner 👑</div></div>
+  </div>
+</section>
+
+<div id="watermark"><div class="wm-track">
+  NEXORA <b>✦</b> RISHIKESH SINGH <b>✦</b> VIDYA <b>✦</b> NEXORA <b>✦</b>&nbsp;
+</div></div>
+
+<footer>
+  <div class="f-owner">RISHIKESH SINGH</div>
+  <p>© 2025 NEXORA — Designed &amp; Engineered solely by the one and only owner, <b>Rishikesh Singh</b>.<br>Every pixel. Every particle. Every line of code. One universe. One vision.</p>
+</footer>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/FontLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/geometries/TextGeometry.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/core3d.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>
+```
+
+---
